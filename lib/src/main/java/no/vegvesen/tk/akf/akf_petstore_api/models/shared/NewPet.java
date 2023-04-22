@@ -27,4 +27,8 @@ public class NewPet {
         return this;
     }
     
+
+    public NewPet(@JsonProperty("name") String name) {
+    this.name = name;
+  }
 }

@@ -4,6 +4,7 @@
 
 package no.vegvesen.tk.akf.akf_petstore_api.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import no.vegvesen.tk.akf.akf_petstore_api.utils.SpeakeasyMetadata;
 
 public class DeletePetRequest {
@@ -17,4 +18,8 @@ public class DeletePetRequest {
         return this;
     }
     
+
+    public DeletePetRequest(@JsonProperty("id") Long id) {
+    this.id = id;
+  }
 }

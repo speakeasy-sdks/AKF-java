@@ -4,6 +4,7 @@
 
 package no.vegvesen.tk.akf.akf_petstore_api.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.net.http.HttpResponse;
 
 public class FindPetsResponse {
@@ -48,4 +49,9 @@ public class FindPetsResponse {
         return this;
     }
     
+
+    public FindPetsResponse(@JsonProperty("ContentType") String contentType, @JsonProperty("StatusCode") Integer statusCode) {
+    this.contentType = contentType;
+this.statusCode = statusCode;
+  }
 }

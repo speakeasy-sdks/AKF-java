@@ -35,8 +35,8 @@ public class SDK {
 	
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "1.1.0";
-	private String _genVersion = "2.19.1";
+	private String _sdkVersion = "1.2.0";
+	private String _genVersion = "2.20.1";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
@@ -145,12 +145,10 @@ public class SDK {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse() {{
+        no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse(contentType, httpRes.statusCode()) {{
             pet = null;
             error = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -191,11 +189,9 @@ public class SDK {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse() {{
+        no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse(contentType, httpRes.statusCode()) {{
             error = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 204) {
@@ -231,12 +227,10 @@ public class SDK {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse() {{
+        no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse(contentType, httpRes.statusCode()) {{
             pet = null;
             error = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {
@@ -283,12 +277,10 @@ public class SDK {
 
         String contentType = httpRes.headers().firstValue("Content-Type").orElse("application/octet-stream");
 
-        no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse() {{
+        no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse res = new no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse(contentType, httpRes.statusCode()) {{
             pets = null;
             error = null;
         }};
-        res.statusCode = httpRes.statusCode();
-        res.contentType = contentType;
         res.rawResponse = httpRes;
         
         if (httpRes.statusCode() == 200) {

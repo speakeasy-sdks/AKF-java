@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'no.vegvesen.tk.akf.akf_petstore_api:Petstore-API:1.1.0'
+implementation 'no.vegvesen.tk.akf.akf_petstore_api:Petstore-API:1.2.0'
 ```
 <!-- End SDK Installation -->
 
@@ -26,10 +26,9 @@ public class Application {
             SDK sdk = SDK.builder()
                 .build();
 
-            no.vegvesen.tk.akf.akf_petstore_api.models.shared.NewPet req = new NewPet() {{
-                name = "Terrence Rau";
-                tag = "nulla";
-            }}            
+            no.vegvesen.tk.akf.akf_petstore_api.models.shared.NewPet req = new NewPet("corrupti") {{
+                tag = "provident";
+            }};            
 
             AddPetResponse res = sdk.addPet(req);
 

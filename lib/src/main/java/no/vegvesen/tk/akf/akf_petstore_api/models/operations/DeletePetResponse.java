@@ -4,6 +4,7 @@
 
 package no.vegvesen.tk.akf.akf_petstore_api.models.operations;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.net.http.HttpResponse;
 
 public class DeletePetResponse {
@@ -38,4 +39,9 @@ public class DeletePetResponse {
         return this;
     }
     
+
+    public DeletePetResponse(@JsonProperty("ContentType") String contentType, @JsonProperty("StatusCode") Integer statusCode) {
+    this.contentType = contentType;
+this.statusCode = statusCode;
+  }
 }
