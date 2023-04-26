@@ -49,9 +49,8 @@ public class FindPetsResponse {
         return this;
     }
     
-
     public FindPetsResponse(@JsonProperty("ContentType") String contentType, @JsonProperty("StatusCode") Integer statusCode) {
-    this.contentType = contentType;
-this.statusCode = statusCode;
+        this.contentType = contentType;
+        this.statusCode = statusCode;
   }
 }

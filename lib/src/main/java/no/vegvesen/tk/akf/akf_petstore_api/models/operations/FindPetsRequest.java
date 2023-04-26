@@ -27,6 +27,5 @@ public class FindPetsRequest {
         return this;
     }
     
-
     public FindPetsRequest(){}
 }

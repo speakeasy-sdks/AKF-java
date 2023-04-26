@@ -39,4 +39,5 @@ lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/operations/FindPets
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/Pet.java
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/Error.java
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/NewPet.java
+docs/sdk/README.md
 USAGE.md

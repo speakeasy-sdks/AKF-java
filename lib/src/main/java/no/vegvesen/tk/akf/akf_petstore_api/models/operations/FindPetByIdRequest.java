@@ -18,8 +18,7 @@ public class FindPetByIdRequest {
         return this;
     }
     
-
     public FindPetByIdRequest(@JsonProperty("id") Long id) {
-    this.id = id;
+        this.id = id;
   }
 }

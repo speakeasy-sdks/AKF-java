@@ -18,8 +18,7 @@ public class DeletePetRequest {
         return this;
     }
     
-
     public DeletePetRequest(@JsonProperty("id") Long id) {
-    this.id = id;
+        this.id = id;
   }
 }

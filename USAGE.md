@@ -3,7 +3,6 @@
 package hello.world;
 
 import no.vegvesen.tk.akf.akf_petstore_api.SDK;
-
 import no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse;
 import no.vegvesen.tk.akf.akf_petstore_api.models.shared.NewPet;
 
@@ -19,11 +18,13 @@ public class Application {
 
             AddPetResponse res = sdk.addPet(req);
 
-            if (res.pet.isPresent()) {
+            if (res.pet != null) {
                 // handle response
             }
         } catch (Exception e) {
             // handle exception
         }
+    }
+}
 ```
 <!-- End SDK Example Usage -->

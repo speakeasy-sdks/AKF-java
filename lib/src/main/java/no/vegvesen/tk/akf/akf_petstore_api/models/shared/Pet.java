@@ -34,9 +34,8 @@ public class Pet {
         return this;
     }
     
-
     public Pet(@JsonProperty("id") Long id, @JsonProperty("name") String name) {
-    this.id = id;
-this.name = name;
+        this.id = id;
+        this.name = name;
   }
 }

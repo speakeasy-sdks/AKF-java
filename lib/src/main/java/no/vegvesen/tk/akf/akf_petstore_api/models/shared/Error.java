@@ -24,9 +24,8 @@ public class Error {
         return this;
     }
     
-
     public Error(@JsonProperty("code") Integer code, @JsonProperty("message") String message) {
-    this.code = code;
-this.message = message;
+        this.code = code;
+        this.message = message;
   }
 }
