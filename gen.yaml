@@ -2,19 +2,20 @@ configVersion: 1.0.0
 management:
   docChecksum: 9545d5d82179d462bcc27faba3356f70
   docVersion: 1.0.0
-  speakeasyVersion: 1.27.0
-  generationVersion: 2.24.0
+  speakeasyVersion: 1.29.0
+  generationVersion: 2.26.0
 generation:
   telemetryEnabled: false
   sdkClassName: SDK
   singleTagPerOp: false
 java:
-  version: 1.6.0
+  version: 1.7.0
   artifactID: akf-petstore-api
   companyEmail: info@mycompany.com
   companyName: My Company
   companyURL: www.mycompany.com
   githubURL: github.com/owner/repo
   groupID: no.vegvesen.tk.akf
+  maxMethodParams: 0
   ossrhURL: https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/
   projectName: Petstore-API

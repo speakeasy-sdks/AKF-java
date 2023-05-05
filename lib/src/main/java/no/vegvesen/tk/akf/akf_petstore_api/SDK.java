@@ -35,8 +35,8 @@ public class SDK {
 	
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "1.6.0";
-	private String _genVersion = "2.24.0";
+	private String _sdkVersion = "1.7.0";
+	private String _genVersion = "2.26.0";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
@@ -125,12 +125,6 @@ public class SDK {
 		
 	}
 
-    /**
-     * Creates a new pet in the store. Duplicates are allowed
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse addPet(no.vegvesen.tk.akf.akf_petstore_api.models.shared.NewPet request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = no.vegvesen.tk.akf.akf_petstore_api.utils.Utils.generateURL(baseUrl, "/pets");
@@ -174,12 +168,6 @@ public class SDK {
         return res;
     }
 
-    /**
-     * deletes a single pet based on the ID supplied
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse deletePet(no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = no.vegvesen.tk.akf.akf_petstore_api.utils.Utils.generateURL(no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetRequest.class, baseUrl, "/pets/{id}", request, null);
@@ -212,12 +200,6 @@ public class SDK {
         return res;
     }
 
-    /**
-     * Returns a user based on a single ID, if the user does not have access to the pet
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse findPetById(no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = no.vegvesen.tk.akf.akf_petstore_api.utils.Utils.generateURL(no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdRequest.class, baseUrl, "/pets/{id}", request, null);
@@ -256,12 +238,6 @@ public class SDK {
         return res;
     }
 
-    /**
-     * Returns all pets from the system that the user has access to - Nam sed condimentum est. Maecenas tempor sagittis sapien, nec rhoncus sem sagittis sit amet. Aenean at gravida augue, ac iaculis sem. Curabitur odio lorem, ornare eget elementum nec, cursus id lectus. Duis mi turpis, pulvinar ac eros ac, tincidunt varius justo. In hac habitasse platea dictumst. Integer at adipiscing ante, a sagittis ligula. Aenean pharetra tempor ante molestie imperdiet. Vivamus id aliquam diam. Cras quis velit non tortor eleifend sagittis. Praesent at enim pharetra urna volutpat venenatis eget eget mauris. In eleifend fermentum facilisis. Praesent enim enim, gravida ac sodales sed, placerat id erat. Suspendisse lacus dolor, consectetur non augue vel, vehicula interdum libero. Morbi euismod sagittis libero sed lacinia. -  - Sed tempus felis lobortis leo pulvinar rutrum. Nam mattis velit nisl, eu condimentum ligula luctus nec. Phasellus semper velit eget aliquet faucibus. In a mattis elit. Phasellus vel urna viverra, condimentum lorem id, rhoncus nibh. Ut pellentesque posuere elementum. Sed a varius odio. Morbi rhoncus ligula libero, vel eleifend nunc tristique vitae. Fusce et sem dui. Aenean nec scelerisque tortor. Fusce malesuada accumsan magna vel tempus. Quisque mollis felis eu dolor tristique, sit amet auctor felis gravida. Sed libero lorem, molestie sed nisl in, accumsan tempor nisi. Fusce sollicitudin massa ut lacinia mattis. Sed vel eleifend lorem. Pellentesque vitae felis pretium, pulvinar elit eu, euismod sapien. - 
-     * @param request the request object containing all of the parameters for the API call
-     * @return the response from the API call
-     * @throws Exception if the API call fails
-     */
     public no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse findPets(no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsRequest request) throws Exception {
         String baseUrl = this._serverUrl;
         String url = no.vegvesen.tk.akf.akf_petstore_api.utils.Utils.generateURL(baseUrl, "/pets");
