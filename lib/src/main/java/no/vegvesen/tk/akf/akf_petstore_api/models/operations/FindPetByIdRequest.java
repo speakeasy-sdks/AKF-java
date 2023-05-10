@@ -13,6 +13,7 @@ public class FindPetByIdRequest {
      */
     @SpeakeasyMetadata("pathParam:style=simple,explode=false,name=id")
     public Long id;
+
     public FindPetByIdRequest withId(Long id) {
         this.id = id;
         return this;

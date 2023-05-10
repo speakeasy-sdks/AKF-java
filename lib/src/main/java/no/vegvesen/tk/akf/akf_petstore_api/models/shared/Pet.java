@@ -14,6 +14,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Pet {
     @JsonProperty("id")
     public Long id;
+
     public Pet withId(Long id) {
         this.id = id;
         return this;
@@ -21,6 +22,7 @@ public class Pet {
     
     @JsonProperty("name")
     public String name;
+
     public Pet withName(String name) {
         this.name = name;
         return this;
@@ -29,6 +31,7 @@ public class Pet {
     @JsonInclude(Include.NON_ABSENT)
     @JsonProperty("tag")
     public String tag;
+
     public Pet withTag(String tag) {
         this.tag = tag;
         return this;

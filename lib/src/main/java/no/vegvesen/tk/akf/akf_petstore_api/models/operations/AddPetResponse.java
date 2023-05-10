@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class AddPetResponse {
     
     public String contentType;
+
     public AddPetResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class AddPetResponse {
      */
     
     public no.vegvesen.tk.akf.akf_petstore_api.models.shared.Error error;
+
     public AddPetResponse withError(no.vegvesen.tk.akf.akf_petstore_api.models.shared.Error error) {
         this.error = error;
         return this;
@@ -30,6 +32,7 @@ public class AddPetResponse {
      */
     
     public no.vegvesen.tk.akf.akf_petstore_api.models.shared.Pet pet;
+
     public AddPetResponse withPet(no.vegvesen.tk.akf.akf_petstore_api.models.shared.Pet pet) {
         this.pet = pet;
         return this;
@@ -37,6 +40,7 @@ public class AddPetResponse {
     
     
     public Integer statusCode;
+
     public AddPetResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -44,6 +48,7 @@ public class AddPetResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public AddPetResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;

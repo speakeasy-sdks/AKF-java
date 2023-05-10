@@ -12,6 +12,7 @@ public class FindPetsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=limit")
     public Integer limit;
+
     public FindPetsRequest withLimit(Integer limit) {
         this.limit = limit;
         return this;
@@ -22,6 +23,7 @@ public class FindPetsRequest {
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=tags")
     public String[] tags;
+
     public FindPetsRequest withTags(String[] tags) {
         this.tags = tags;
         return this;

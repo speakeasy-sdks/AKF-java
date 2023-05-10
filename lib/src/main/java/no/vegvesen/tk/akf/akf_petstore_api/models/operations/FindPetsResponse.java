@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class FindPetsResponse {
     
     public String contentType;
+
     public FindPetsResponse withContentType(String contentType) {
         this.contentType = contentType;
         return this;
@@ -20,6 +21,7 @@ public class FindPetsResponse {
      */
     
     public no.vegvesen.tk.akf.akf_petstore_api.models.shared.Error error;
+
     public FindPetsResponse withError(no.vegvesen.tk.akf.akf_petstore_api.models.shared.Error error) {
         this.error = error;
         return this;
@@ -30,6 +32,7 @@ public class FindPetsResponse {
      */
     
     public no.vegvesen.tk.akf.akf_petstore_api.models.shared.Pet[] pets;
+
     public FindPetsResponse withPets(no.vegvesen.tk.akf.akf_petstore_api.models.shared.Pet[] pets) {
         this.pets = pets;
         return this;
@@ -37,6 +40,7 @@ public class FindPetsResponse {
     
     
     public Integer statusCode;
+
     public FindPetsResponse withStatusCode(Integer statusCode) {
         this.statusCode = statusCode;
         return this;
@@ -44,6 +48,7 @@ public class FindPetsResponse {
     
     
     public HttpResponse<byte[]> rawResponse;
+
     public FindPetsResponse withRawResponse(HttpResponse<byte[]> rawResponse) {
         this.rawResponse = rawResponse;
         return this;
