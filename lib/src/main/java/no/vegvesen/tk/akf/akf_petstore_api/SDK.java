@@ -35,8 +35,8 @@ public class SDK {
 	
 	private String _serverUrl;
 	private String _language = "java";
-	private String _sdkVersion = "1.11.0";
-	private String _genVersion = "2.30.0";
+	private String _sdkVersion = "1.12.0";
+	private String _genVersion = "2.31.0";
 	/**
 	 * The Builder class allows the configuration of a new instance of the SDK.
 	 */
@@ -143,7 +143,8 @@ public class SDK {
             throw new Exception("Request body is required");
         }
         req.setBody(serializedRequestBody);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -188,7 +189,8 @@ public class SDK {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("DELETE");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -227,7 +229,8 @@ public class SDK {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         
         HTTPClient client = this._defaultClient;
@@ -272,7 +275,8 @@ public class SDK {
         HTTPRequest req = new HTTPRequest();
         req.setMethod("GET");
         req.setURL(url);
-        
+
+        req.addHeader("Accept", "application/json;q=1, application/json;q=0");
         req.addHeader("user-agent", String.format("speakeasy-sdk/%s %s %s", this._language, this._sdkVersion, this._genVersion));
         java.util.List<NameValuePair> queryParams = no.vegvesen.tk.akf.akf_petstore_api.utils.Utils.getQueryParams(no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsRequest.class, request, null);
         if (queryParams != null) {
