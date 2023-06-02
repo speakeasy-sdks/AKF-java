@@ -6,7 +6,7 @@
 ### Gradle
 
 ```groovy
-implementation 'no.vegvesen.tk.akf.akf_petstore_api:Petstore-API:1.14.0'
+implementation 'no.vegvesen.tk.akf.akf_petstore_api:Petstore-API:1.14.1'
 ```
 <!-- End SDK Installation -->
 
