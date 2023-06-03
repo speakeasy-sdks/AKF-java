@@ -1,3 +1,4 @@
+lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/SDKConfiguration.java
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/SDK.java
 .gitattributes
 .gitignore
