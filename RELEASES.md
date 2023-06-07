@@ -155,3 +155,9 @@ Based on:
 Based on:
 - OpenAPI Doc 1.0.0 https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore-expanded.yaml
 - Speakeasy CLI 1.43.0 (2.35.3) https://github.com/speakeasy-api/speakeasy
+
+## 2023-06-07 01:49:52
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 https://raw.githubusercontent.com/OAI/OpenAPI-Specification/main/examples/v3.0/petstore-expanded.yaml
+- Speakeasy CLI 1.44.2 (2.35.9) https://github.com/speakeasy-api/speakeasy
