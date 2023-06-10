@@ -40,5 +40,15 @@ lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/operations/FindPets
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/Pet.java
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/Error.java
 lib/src/main/java/no/vegvesen/tk/akf/akf_petstore_api/models/shared/NewPet.java
-docs/sdk/README.md
+docs/sdks/sdk/README.md
 USAGE.md
+docs/models/operations/AddPetResponse.md
+docs/models/operations/DeletePetRequest.md
+docs/models/operations/DeletePetResponse.md
+docs/models/operations/FindPetByIdRequest.md
+docs/models/operations/FindPetByIdResponse.md
+docs/models/operations/FindPetsRequest.md
+docs/models/operations/FindPetsResponse.md
+docs/models/shared/Pet.md
+docs/models/shared/Error.md
+docs/models/shared/NewPet.md

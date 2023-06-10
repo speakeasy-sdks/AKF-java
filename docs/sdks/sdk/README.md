@@ -50,6 +50,18 @@ public class Application {
 }
 ```
 
+### Parameters
+
+| Parameter                                                                                 | Type                                                                                      | Required                                                                                  | Description                                                                               |
+| ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| `request`                                                                                 | [no.vegvesen.tk.akf.akf_petstore_api.models.shared.NewPet](../../models/shared/NewPet.md) | :heavy_check_mark:                                                                        | The request object to use for the request.                                                |
+
+
+### Response
+
+**[no.vegvesen.tk.akf.akf_petstore_api.models.operations.AddPetResponse](../../models/operations/AddPetResponse.md)**
+
+
 ## deletePet
 
 deletes a single pet based on the ID supplied
@@ -83,6 +95,18 @@ public class Application {
 }
 ```
 
+### Parameters
+
+| Parameter                                                                                                             | Type                                                                                                                  | Required                                                                                                              | Description                                                                                                           |
+| --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                             | [no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetRequest](../../models/operations/DeletePetRequest.md) | :heavy_check_mark:                                                                                                    | The request object to use for the request.                                                                            |
+
+
+### Response
+
+**[no.vegvesen.tk.akf.akf_petstore_api.models.operations.DeletePetResponse](../../models/operations/DeletePetResponse.md)**
+
+
 ## findPetById
 
 Returns a user based on a single ID, if the user does not have access to the pet
@@ -115,6 +139,18 @@ public class Application {
     }
 }
 ```
+
+### Parameters
+
+| Parameter                                                                                                                 | Type                                                                                                                      | Required                                                                                                                  | Description                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                                 | [no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdRequest](../../models/operations/FindPetByIdRequest.md) | :heavy_check_mark:                                                                                                        | The request object to use for the request.                                                                                |
+
+
+### Response
+
+**[no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetByIdResponse](../../models/operations/FindPetByIdResponse.md)**
+
 
 ## findPets
 
@@ -160,3 +196,15 @@ public class Application {
     }
 }
 ```
+
+### Parameters
+
+| Parameter                                                                                                           | Type                                                                                                                | Required                                                                                                            | Description                                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                           | [no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsRequest](../../models/operations/FindPetsRequest.md) | :heavy_check_mark:                                                                                                  | The request object to use for the request.                                                                          |
+
+
+### Response
+
+**[no.vegvesen.tk.akf.akf_petstore_api.models.operations.FindPetsResponse](../../models/operations/FindPetsResponse.md)**
+
