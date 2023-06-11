@@ -41,7 +41,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'no.vegvesen.tk.akf'
             artifactId = 'akf-petstore-api'
-            version = '1.17.0'
+            version = '1.17.1'
 
             from components.java
 
